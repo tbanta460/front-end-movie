@@ -1,12 +1,12 @@
 {
-  "homepage": "git@github.com:tbanta460/my-movie.git",
+  "homepage": "http://tbanta460.github.io/my-movie ",
   "name": "my-movice",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
-
+    
     "dev": "next dev",
     "build": "next build",
     "start": "next start",

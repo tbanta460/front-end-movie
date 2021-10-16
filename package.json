@@ -1,20 +1,35 @@
 {
+  "homepage": "http://tbanta460.github.io/my-movie ",
   "name": "my-movice",
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@zeit/next-sass": "^1.0.1",
+    "json-server": "^0.16.3",
     "next": "11.1.2",
+    "next-redux-wrapper": "^7.0.5",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-redux": "^7.2.5",
+    "redux": "^4.1.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
+    "autoprefixer": "^10.3.4",
     "eslint": "7.32.0",
-    "eslint-config-next": "11.1.2"
+    "eslint-config-next": "11.1.2",
+    "gh-pages": "^3.2.3",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.15"
   }
 }

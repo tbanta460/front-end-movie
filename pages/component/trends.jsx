@@ -88,7 +88,7 @@ class GetData extends Component{
             <div className="text-center bg-05">
                 <div className="w-11/12 mx-auto pt-10 box-border">
                     <div className="flex flex-row px-9 md:px-14">
-                        <img src="./icon/trend.svg" className="w-3 mr-3 text-white"/>
+                        <img src="./icon/trend.svg" className="w-3 mr-3 text-white" alt="icon trends"/>
                         <h2 className="font-bold text-lg text-white">Trends Now</h2>
                     </div>
                     <div>

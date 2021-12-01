@@ -30,7 +30,7 @@ class Trailer extends Component {
             <>
                 <div className="w-11/12 mx-auto pt-10 box-border">
                     <div className="flex flex-row px-14">
-                        <img src="./icon/play.svg" className="w-5 mr-5 text-white"width={100}height={100}/>
+                        <img src="./icon/play.svg" className="w-5 mr-5 text-white"alt="icon play"/>
                         <h2 className="font-bold text-2xl text-white">Trailer</h2>
                     </div>
                     <div className="flex lg:flex-row flex-col lg:p-14 py-5 bg-06">

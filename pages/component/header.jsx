@@ -38,7 +38,7 @@ function Header (props) {
             props.forUpdate(false)
         }
         setUpdate(false)
-    })
+    },[update])
     const handleEvent = (e) => {
         if(e.keyCode === 13 ){
             changeClick(false)

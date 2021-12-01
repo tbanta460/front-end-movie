@@ -16,9 +16,9 @@ class InfoMovie extends Component {
                             <p className="my-4 text-sm">{dataProps.sipno.length > lengthText ? dataProps.sipno.slice(0, lengthText) + '...' : dataProps.sipno}</p>
                             <div>
                                 <ul className="flex flex-row flex-wrap mx-auto">
-                                    {dataProps.genre.map(data => {
+                                    {dataProps.genre.map((data,index) => {
                                         return (
-                                            <li className="text-xs mx-1 my-1 bg-101 rounded-md p-2">{data}</li>
+                                            <li key={index}className="text-xs mx-1 my-1 bg-101 rounded-md p-2">{data}</li>
                                         )
                                     })}
                                 </ul>

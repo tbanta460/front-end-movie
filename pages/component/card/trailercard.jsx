@@ -1,13 +1,9 @@
 import React, {useState, useEffect} from 'react'
 
 const TrailerCard = (props) => {
-    // console.log(props.arrayTrailer.length)
     let runRefs = [];
     const [nameVideo, setNamevideo] = useState("Avengers End");
     const [name, setName] = useState(false);
-    useEffect(() => {
-
-    })
     
     const getFuction = (e) => {
         props.getName(e.textContent)

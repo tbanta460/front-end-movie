@@ -12,11 +12,10 @@ const Searching = () => {
     const [searchName,setSearchName] = useState([]);
     const [update, setUpdate] = useState(false);
     useEffect(() => {
-        // fetchData()
         if(!update){
             fetchData();
         };
-    });
+    },[]);
     const fetchData = () => {
         fetch('http://localhost:3010/movie')
         .then(res => res.json())
@@ -24,7 +23,6 @@ const Searching = () => {
             const getName = Array.from(respone).map(data => {
                 return data
             })
-            // setNameMovie(getName)
             setUpdate(true)
             filterMovie(getName)
         })

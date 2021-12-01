@@ -81,20 +81,6 @@ class Genre extends Component{
             })
         }
     }
-    // componentWillUpdate(){
-    //     let showGenre = this.state.show;
-    //     let forGenre = this.props.showGenre
-    //     if(forGenre !== undefined){
-    //         if(forGenre.className === "arrow" && showGenre){
-    //             console.log('berarti ii true')
-    //             showGenre = false
-    //         }else {
-    //             console.log('berarti ini false')
-    //             showGenre = true
-    //         }
-    //     }
-    //     this.setState({show:showGenre})
-    // }
     sendGenre = (e) => {
         this.props.getGenre(e[0]);
         this.setState({update:true})
@@ -124,25 +110,4 @@ class Genre extends Component{
         )
     }
 }
-// const Genre = () => {
-//     const [genrei, setGenrei] = useState("");
-//     const genres = ["Horror", "Thriller", "Drama", "Romance", "Adventure", "Fantasy", "Crime", "Mystery", "Wastern", "Biography", "Sci-Fi", "Action"];
-//     const handleAktif = (e) => {
-//         const getSelection = genres.map(data => {
-//             return data
-//         }).filter(data => {
-//             if(data === e.target.textContent){
-//                 return data
-//             }
-//         });
-//         setGenrei(getSelection)
-//         props.changeCard(genrei)
-        
-//     }
-    
-//     return(
-//         <>
-//         </>
-//     )
-// }
 export default Genre

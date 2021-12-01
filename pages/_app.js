@@ -2,7 +2,7 @@ import App from 'next/app'
 import '../styles/globals.css'
 import {Provider} from 'react-redux'
 import {createStore} from 'redux'
-// import {store} from './component/store/store'
+import {store} from './component/store/store'
 const initState = {
   show: false
 }

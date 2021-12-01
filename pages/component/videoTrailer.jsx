@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import TrailerCard from './card/trailercard'
 import dataTrail from '../../dataJSON/trailer.json'
+import Image from 'next/image'
 class Trailer extends Component {
     constructor(props){
         super(props);
@@ -29,7 +30,7 @@ class Trailer extends Component {
             <>
                 <div className="w-11/12 mx-auto pt-10 box-border">
                     <div className="flex flex-row px-14">
-                        <img src="./icon/play.svg" className="w-5 mr-5 text-white"/>
+                        <Image src="./icon/play.svg" className="w-5 mr-5 text-white"/>
                         <h2 className="font-bold text-2xl text-white">Trailer</h2>
                     </div>
                     <div className="flex lg:flex-row flex-col lg:p-14 py-5 bg-06">

@@ -34,11 +34,11 @@ const BarRight = (props) => {
                 <div className="mx-4">
                     <ul>
                     {
-                        header.map(data => {
+                        header.map((data,index) => {
                             return (
                                 <>
                                     <li className="font-bold text-white my-8" onClick={props.hideBar}>
-                                            <Link href={data.src} ><a className={`p-4 ${data.src === router.pathname ? "border-b-4 border-grey" : ""}`} >{data.name}</a></Link>
+                                            <Link key={index}href={data.src} ><a className={`p-4 ${data.src === router.pathname ? "border-b-4 border-grey" : ""}`} >{data.name}</a></Link>
                                     </li>
                                 </>
                             )

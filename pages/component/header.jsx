@@ -3,6 +3,7 @@ import Link from 'next/link';
 import {useRouter} from 'next/router'
 import {useEffect, useState} from 'react'
 import {connect} from 'react-redux'
+import Image from 'next/image'
 
 function Header (props) {
     const forClass = {
@@ -66,23 +67,23 @@ function Header (props) {
                         </div>
                         <div className="w-3/4 hidden md:inline-block">
                             <ul className="flex flex-row justify-around">
-                                {header.map(data => {
+                                {header.map((data,index) => {
                                     return (
                                         <li className="font-bold text-white">
-                                            <Link href={data.src} ><a className={`p-4 ${data.src === router.pathname ? "border-b-4 border-orange" : ""}`} >{data.name}</a></Link>
+                                            <Link key={index} href={data.src} ><a className={`p-4 ${data.src === router.pathname ? "border-b-4 border-orange" : ""}`} >{data.name}</a></Link>
                                         </li>)
                                 })}
                             </ul>
                         </div>
                         <div className="relative flex lg:justify-around items-center" >
                             <label htmlFor="search" >
-                                <img src="./icon/search.svg" alt="icon search" className="w-7 inline-block " onClick={longLine}/>
+                                <Image src="./icon/search.svg" alt="icon search" className="w-7 inline-block " onClick={longLine}/>
                             </label>
                             <input name="search"ref={getValue}type="text" id="search"className={`focus:outline-none duration-300 border-b-2 lg:w-auto bg-transparent text-white ${click ? forClass.show : forClass.hide}`} placeholder="Search" onKeyUp={handleEvent}/>
                             <div className="flex justify-around hidden lg:block">
-                                <img src="./icon/facebook.svg" alt="icon facebook" className="w-10 inline-block cursor-pointer"/>
-                                <img src="./icon/instagram.svg" alt="icon instagram" className="w-10 inline-block mx-6 cursor-pointer"/>
-                                <img src="./icon/twitter.svg" alt="icon twitter" className="w-10 inline-block cursor-pointer"/>
+                                <Image src="./icon/facebook.svg" alt="icon facebook" className="w-10 inline-block cursor-pointer"/>
+                                <Image src="./icon/instagram.svg" alt="icon instagram" className="w-10 inline-block mx-6 cursor-pointer"/>
+                                <Image src="./icon/twitter.svg" alt="icon twitter" className="w-10 inline-block cursor-pointer"/>
                             </div>
                         </div>
                         <div className="grid md:hidden justify-end items-end cursor-pointer" onClick={props.showBar}>

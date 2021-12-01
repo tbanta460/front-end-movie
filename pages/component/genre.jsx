@@ -55,10 +55,10 @@ class Genre extends Component{
             <div className={` my-4 lg:h-full lg:block duration-500 ${tfGenre ? "h-full" : "hidden" }`}>
                 <div className="lg:flex grid grid-cols-2 md:grid-cols-3 lg:flex-row px-14">
                     {
-                        this.state.arrGenre.map(data => {
+                        this.state.arrGenre.map((data,index) => {
                             return(
                                 <>
-                                    <div className={`lg:text-left text-center px-3 py-2 hover:bg-101 cursor-pointer text-white duration-500 rounded-lg mx-2 ${this.state.genre == data ? "bg-101" : ""}`} onClick={this.handleAktif}>
+                                    <div key={index}className={`lg:text-left text-center px-3 py-2 hover:bg-101 cursor-pointer text-white duration-500 rounded-lg mx-2 ${this.state.genre == data ? "bg-101" : ""}`} onClick={this.handleAktif}>
                                         {
                                             data
                                         }

@@ -4,6 +4,7 @@ import CardRec from './card/cardrec'
 import {connect} from 'react-redux'
 import ViewMore from './viewMore/viewMore'
 import Loading from '../dataApi/loading'
+import Image from 'next/image'
 
 class GetData extends Component{
     constructor(props){
@@ -88,7 +89,7 @@ class GetData extends Component{
             <div className="text-center bg-05">
                 <div className="w-11/12 mx-auto pt-10 box-border">
                     <div className="flex flex-row px-9 md:px-14">
-                        <img src="./icon/trend.svg" className="w-3 mr-3 text-white"/>
+                        <Image src="./icon/trend.svg" className="w-3 mr-3 text-white"/>
                         <h2 className="font-bold text-lg text-white">Trends Now</h2>
                     </div>
                     <div>
@@ -119,7 +120,7 @@ class GetData extends Component{
                     </div>
                         <ViewMore />
                     <div className="flex flex-row px-9 md:px-14 justify-start items-center">
-                        <img className="w-3 mr-3 text-white" src="./icon/star.svg" alt="recomendation" />
+                        <Image className="w-3 mr-3 text-white" src="./icon/star.svg" alt="recomendation" />
                         <span className="font-bold text-lg text-white">Recommendation</span>
                     </div> 
                     <div className="w-11/12 overflow-x-scroll lg:overflow-visible mx-auto scrollbars scrollbar">

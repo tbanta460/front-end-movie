@@ -7,19 +7,23 @@ const BarRight = (props) => {
     const router = useRouter();
     const header = [{
         name: 'Home',
-        src: '/'
+        src: '/',
+        key: "1020"
     },
     {
         name: 'Recommended',
-        src: '/recomended'
+        src: '/recomended',
+        key: "1021"
     },
     {
         name: 'Video',
-        src: '/search'
+        src: '/search',
+        key: "1022"
     },
     {
         name: 'Review',
-        src: '/review'
+        src: '/review',
+        key: "1023"
     }];
     
     return (
@@ -36,11 +40,11 @@ const BarRight = (props) => {
                     {
                         header.map((data,index) => {
                             return (
-                                <>
-                                    <li className="font-bold text-white my-8" onClick={props.hideBar}>
-                                            <Link key={index}href={data.src} ><a className={`p-4 ${data.src === router.pathname ? "border-b-4 border-grey" : ""}`} >{data.name}</a></Link>
+                                
+                                    <li className="font-bold text-white my-8" onClick={props.hideBar} key={data.key}>
+                                            <Link key={data.key}href={data.src} ><a className={`p-4 ${data.src === router.pathname ? "border-b-4 border-grey" : ""}`} >{data.name}</a></Link>
                                     </li>
-                                </>
+                                
                             )
                         })
                     }

@@ -4,61 +4,71 @@
             "name":"Avengers End",
             "duration": "02:26",
             "src":"./trailer/avengersendgame.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "001"
         },
         {
             "name": "The Losers",
             "duration":"02:25",
             "src":"./trailer/thelosers.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "002"
         },
         {
             "name": "High-Rise",
             "duration":"02:17",
             "src":"./trailer/high-rise.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "003"
         },
         {
             "name": "The Hangover",
             "duration":"02:29",
             "src":"./trailer/TheHangover.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "004"
         },
         {
             "name": "National Treasure",
             "duration":"02:22",
             "src":"./trailer/nationaltreasure.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "005"
         },
         {
             "name": "Dawn Of The Plane Of The Apes",
             "duration":"02:38",
             "src":"./trailer/dawnoftheplanetoftheapes.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "006"
         },
         {
             "name": "Hanna",
             "duration":"02:35",
             "src":"./trailer/hanna.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "007"
         },
         {
             "name": "Master Z: Ip Man Legacy",
             "duration":"01:45",
             "src":"./trailer/masterz.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "008"
         },
         {
             "name": "Nigh At The Museum",
             "duration":"02:21",
             "src":"./trailer/nightatthemuseum.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "009"
         },
         {
             "name": "Star Wars",
             "duration":"02:37",
             "src":"./trailer/starwars.mp4",
-            "type": "video/mp4"
+            "type": "video/mp4",
+            "key": "010"
         }
     ]
 }

@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import Image from 'next/image'
+
 const Footer = () => {
     return (
         <>
@@ -22,23 +22,23 @@ const Footer = () => {
                         <div>
                             <ul className="flex lg:justify-around">
                                 <li>
-                                    <Image src="./icon/facebook.svg" alt="icon facebook" className="w-7 md:w-10 inline-block cursor-pointer"/>
+                                    <img src="./icon/facebook.svg" alt="icon facebook" className="w-7 md:w-10 inline-block cursor-pointer"/>
                                 </li>
                                 <li>
-                                    <Image src="./icon/instagram.svg" alt="icon instagram" className="w-7 md:w-10 inline-block mx-6 cursor-pointer"/>
+                                    <img src="./icon/instagram.svg" alt="icon instagram" className="w-7 md:w-10 inline-block mx-6 cursor-pointer"/>
                                 </li>
                                 <li>
-                                    <Image src="./icon/twitter.svg" alt="icon twitter" className="w-7 md:w-10 inline-block cursor-pointer"/>
+                                    <img src="./icon/twitter.svg" alt="icon twitter" className="w-7 md:w-10 inline-block cursor-pointer"/>
                                 </li>
                             </ul>
                         </div>
                         <div className="grid justify-end items-end lg:m-0 my-5">
                             <ul className="flex flex-col md:flex-row m-0 md:mx-14 justify-center items-center">
                                 <li className="cursor-pointer">
-                                    <Image className="w-32 mx-5"src="./logo/playstore.png" alt="logo play store"/>
+                                    <img className="w-32 mx-5"src="./logo/playstore.png" alt="logo play store"/>
                                 </li>
                                 <li className="cursor-pointe md:m-0 my-3">
-                                    <Image className="w-32 mx-5"src="./logo/appstore.png" alt="logo app store"/>
+                                    <img className="w-32 mx-5"src="./logo/appstore.png" alt="logo app store"/>
                                 </li>
                             </ul>
                         </div>

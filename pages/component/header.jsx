@@ -3,7 +3,6 @@ import Link from 'next/link';
 import {useRouter} from 'next/router'
 import {useEffect, useState} from 'react'
 import {connect} from 'react-redux'
-import Image from 'next/image'
 
 function Header (props) {
     const forClass = {
@@ -16,19 +15,23 @@ function Header (props) {
     const [click, setClick] = useState(false)
     const header = [{
         name: 'Home',
-        src: '/'
+        src: '/',
+        key:"900"
     },
     {
         name: 'Recommended',
-        src: '/recomended'
+        src: '/recomended',
+        key:"901"
     },
     {
         name: 'Video',
-        src: '/video'
+        src: '/video',
+        key:"902"
     },
     {
         name: 'Review',
-        src: '/review'
+        src: '/review',
+        key:"903"
     }]
     useEffect(() => {
         if(update){
@@ -69,7 +72,7 @@ function Header (props) {
                             <ul className="flex flex-row justify-around">
                                 {header.map((data,index) => {
                                     return (
-                                        <li className="font-bold text-white">
+                                        <li className="font-bold text-white" key={data.key}>
                                             <Link key={index} href={data.src} ><a className={`p-4 ${data.src === router.pathname ? "border-b-4 border-orange" : ""}`} >{data.name}</a></Link>
                                         </li>)
                                 })}
@@ -77,13 +80,13 @@ function Header (props) {
                         </div>
                         <div className="relative flex lg:justify-around items-center" >
                             <label htmlFor="search" >
-                                <Image src="./icon/search.svg" alt="icon search" className="w-7 inline-block " onClick={longLine}/>
+                                <img src="./icon/search.svg" alt="icon search" className="w-7 inline-block " onClick={longLine}/>
                             </label>
                             <input name="search"ref={getValue}type="text" id="search"className={`focus:outline-none duration-300 border-b-2 lg:w-auto bg-transparent text-white ${click ? forClass.show : forClass.hide}`} placeholder="Search" onKeyUp={handleEvent}/>
                             <div className="flex justify-around hidden lg:block">
-                                <Image src="./icon/facebook.svg" alt="icon facebook" className="w-10 inline-block cursor-pointer"/>
-                                <Image src="./icon/instagram.svg" alt="icon instagram" className="w-10 inline-block mx-6 cursor-pointer"/>
-                                <Image src="./icon/twitter.svg" alt="icon twitter" className="w-10 inline-block cursor-pointer"/>
+                                <img src="./icon/facebook.svg" alt="icon facebook" className="w-10 inline-block cursor-pointer"/>
+                                <img src="./icon/instagram.svg" alt="icon instagram" className="w-10 inline-block mx-6 cursor-pointer"/>
+                                <img src="./icon/twitter.svg" alt="icon twitter" className="w-10 inline-block cursor-pointer"/>
                             </div>
                         </div>
                         <div className="grid md:hidden justify-end items-end cursor-pointer" onClick={props.showBar}>

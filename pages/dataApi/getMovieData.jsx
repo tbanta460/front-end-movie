@@ -15,11 +15,11 @@ const FetchData = () => {
         .catch(error => {
             setError(error)
         });
-    });
+    },[]);
 
     useEffect(() => {
         fetchData()
-    })
+    },[fetchData])
 
     return {items, load, error}
 }

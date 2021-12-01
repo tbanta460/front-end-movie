@@ -106,9 +106,9 @@ class GetData extends Component{
                             this.state.arrForTrends 
                             ?
                                 this.state.error !== null ? <div>Error: {error.message}</div> : this.state.arrForTrends.map((data,index) => {
-                                return  (<>
+                                return  (
                                             <CardRec image={data.img} data={data} key={data.key}/>
-                                        </>)
+                                        )
                                 })
                             :
                                 <Loading />

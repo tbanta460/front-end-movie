@@ -7,6 +7,7 @@ class InfoMovie extends Component {
     render(){
         const lengthText = 100;
         const dataProps = this.props.data
+        console.log(dataProps)
         return (
             <>
                 <div className="bg-white w-64 absolute z-10 x15 hidden md:block rounded-md p-2 text-left">
@@ -18,7 +19,7 @@ class InfoMovie extends Component {
                                 <ul className="flex flex-row flex-wrap mx-auto">
                                     {dataProps.genre.map((data,index) => {
                                         return (
-                                            <li key={index}className="text-xs mx-1 my-1 bg-101 rounded-md p-2">{data}</li>
+                                            <li key={data.key}className="text-xs mx-1 my-1 bg-101 rounded-md p-2">{data.name}</li>
                                         )
                                     })}
                                 </ul>

@@ -5,7 +5,7 @@
             "sipno": "There's a famous 1887 painting by André Brouillet called 'A Clinical Lesson at the Salpêtrière'. In it, a room full of men watch a strange demonstration going on at the front of the room. A man stands beside a table covered in medical instruments. A woman in a loosened corset, her breasts nearly exposed, swoons into the arms of a man. Her left hand clenches in a claw. This disturbing tableau depicts neurologist Jean-Martin Charcot, celebrated for what was considered his groundbreaking treatment of the mentally ill at the Pitié-Salpêtrière asylum in Paris. He would often give demonstrations of his methodology, using actual patients. This painting is recreated in Mélanie Laurent's 'The Mad Women's Ball,' a compelling and vivid adaptation of Victoria Mas' novel about two women trapped—in different ways—behind the gates of the Salpêtrière during Charcot's reign. ",
             "tglrel": "12/09/2021",
             "penulis": "Victoria Mas",
-            "genre": ["Drama", "Thriller"],
+            "genre": [{"name":"Drama", "key": "9001"}, {"name":"Thriller","key":"9002"}],
             "img": "./imgmovie/womensball.jpeg",
             "id":"01490665",
             "key": "0980"
@@ -15,7 +15,7 @@
             "sipno": "'Dawn of the Planet of the Apes' is loud, smart and ferociously committed to its premise, and it leaves an intriguingly bitter aftertaste.  Like its predecessor, 2011's 'Rise of the Planet of the Apes,'' it borrows situations and images from the 1960s and '70s 'Apes' films and re-creates them as epic dramas. These new installments in the series aren't as satirical as the original 'Apes' movies, but they're just as playfully political; the biggest difference is the sense of intimacy. The politics are personal, and they play out through the character of Caesar (Andy Serkis). ",
             "tgrel": "09/07/2014",
             "penulis": "Pierre Boulle",
-            "genre": ["Action", "Adventure", "Drama"],
+            "genre": [{"key":"8001", "name":"Action"},{"key":"8002","name": "Adventure"}, {"key":"8003", "name":"Drama"}],
             "img": "./imgmovie/planetoftheapes.jpg",
             "id": "01532890",
             "key": "0981"
@@ -25,7 +25,7 @@
             "sipno": "'Green Zone' looks at an American war in a way almost no Hollywood movie ever has: We're not the heroes, but the dupes. Its message is that Iraq's fabled 'weapons of mass destruction' did not exist, and that neocons within the administration fabricated them, lied about them and were ready to kill to cover up their deception.",
             "tgrel": "12/03/2010",
             "penulis": "Brian Helgeland",
-            "genre":["Action", "Drama", "Thriller"],
+            "genre":[{"key":"4541","name":"Action"}, {"key":"4532","name":"Drama"}, {"key":"4533","name":"Thriller"}],
             "img": "./imgmovie/greenzone.jpg",
             "id": "0178293",
             "key": "0982"
@@ -35,7 +35,7 @@
             "sipno": "'The Grey' is an unrelenting demonstration that wolves have no opinion. When they attack, it's not personal. They've spent untold millennia learning how to survive, naked and without weapons, in fearsome places like the Arctic Circle in the dead of winter. They aren't precisely unarmed; they have their teeth and claws, but how far would that get us, even if we had rifles?",
             "tgrel": "11/12/2011",
             "penulis": "Carnahan Ian Mackenzie Jeffers",
-            "genre": ["Action", "Adventure", "Drama"],
+            "genre": [{"key":"331","name":"Action"}, {"key":"332","name":"Adventure"}, {"key":"333","name":"Drama"}],
             "img": "./imgmovie/thefrey.jpg",
             "id": "017852390",
             "key": "0983"
@@ -45,7 +45,7 @@
             "sipno": "'Hanna' is a first-rate thriller about the drawbacks of home schooling. As it opens, a teenage girl is in the act of killing a deer with her bow and arrow, and then as she's gutting the carcass, a man sneaks up behind and says, “You're dead!” She engages in a fierce hand-to-hand battle with this man, who turns out to be her father. He has raised her as they lived alone deep in the forest in a house that looks like it was inspired by lots of gingerbread.",
             "tgrel": "08/04/2011",
             "penulis": "Seth Lochhead David Farr",
-            "genre":["Action", "Drama"],
+            "genre":[{"key":"2321","name":"Action"},{"key":"2322","name": "Drama"}],
             "img": "./imgmovie/hanna.jpg",
             "id": "0189357389",
             "key": "0984"
@@ -55,7 +55,7 @@
             "sipno": "“High-Rise,” the new film directed by Ben Wheatley from a script by his regular collaborator (and wife) Amy Jump, begins with this scene, even with this sentence recited in voice-over. The visualization is crisp, definite, but discreet enough to not immediately provoke a scurrying to the exits. Wheatley is a smart, resourceful filmmaker who knows how to modulate his imagery. Hooking a movie viewer is different from hooking a reader. And “High-Rise” the movie did hook me. The story of a seemingly inexplicable breakdown of social order within an apartment building outside London that’s been designed to approximate a community, “High-Rise” was a speculative fiction very much of the time when it was written. Wheatley and Jump’s first smart decision in adapting the novel was in leaving it in its non-futuristic 1975 time frame. It’s the temporal place where Ballard’s narrative works best, and in the context of a 2015-produced film, it creates a certain retro frisson for the viewer: Apocalypse Then, so to speak. It also allows Wheatley and Jump to make some explicitly political points about Great Britain, which some may consider ill-advised. ",
             "tgrel": "18/03/2016",
             "penulis": "J.G. Ballard",
-            "genre":["Drama", "Sci-Fi"],
+            "genre":[{"key":"7020","name":"Drama"}, {"key":"7021","name":"Sci-Fi"}],
             "img": "./imgmovie/highrise.jpg",
             "id": "0133092126",
             "key": "0985"
@@ -65,7 +65,7 @@
             "sipno": "'The Losers' is a classical action movie based on a comic strip. It does just enough nodding toward the graphics of drawn superheroes, and then gets that out of the way and settles down into a clean, efficient and entertaining thriller. It's a reminder of how exhausting this kind of material can be when it's brought to a manic level by overwrought directors. But 'The Losers' looks, feels and plays like a real movie. There is another reason to be grateful: It's not in 3-D. You have to treasure movies like this before they're entirely eaten away by the marketing gimmicks.",
             "tgrel": "23/04/2010",
             "penulis": "James Vanderbilt Peter Berg",
-            "genre":["Action", "Drama", "Crime"],
+            "genre":[{"key":"9020","name":"Action"}, {"key":"9021","name":"Drama"},{"key":"9022","name": "Crime"}],
             "img": "./imgmovie/losers.jpg",
             "id": "01098423",
             "key": "0986"
@@ -75,7 +75,7 @@
             "sipno": "Director Nia DaCosta’s “Candyman” is being sold as a “spiritual sequel” to the 1992 horror classic starring Virginia Madsen and Vanessa Williams. This iteration ignores the two actual sequels to writer/director Bernard Rose’s adaptation of a Clive Barker short story, instead picking up in present day Chicago. The Cabrini Green where Madsen’s Helen Lyle character met her grisly fate is no more; the towers have been torn down and the area’s being gentrified within an inch of its life. Had Lyle survived, she’d probably be living in a place like that of artist Anthony McCoy (Yahya Abdul-Mateen II). “White people built the ghetto,” says his girlfriend, Brianna (Teyonah Parris) to her brother, Troy (Nathan Stewart-Jarrett), “and then erased it when they realized they built the ghetto.” This is not the last we’ll hear about gentrification.",
             "tgrel": "27/08/2021",
             "penulis": "Jordan Peele",
-            "genre":["Horror", "Thriller"],
+            "genre":[{"key":"30002","name":"Horror"}, {"key":"30003","name":"Thriller"}],
             "img": "./imgmovie/candyman.jpg",
             "id": "01721302",
             "key": "0987"
@@ -85,7 +85,7 @@
             "sipno": "The middle half of 'Master Z: Ip Man Legacy'—a new martial arts spin-off of the mega-popular action-biopic series—feels like a self-defense (and maybe a defense of the preceding film series). Which is striking, since the 'Ip Man' movies—most of which star Donnie Yen as Man Ip, the formative Wing Chun instructor who went on to mentor Bruce Lee—are relatively un-ambitious action movies that pit civic-minded Ip against cartoonishly sadistic Brits and spineless mainland and/or Hong Kong collaborators. That kind of proudly nationalistic folk hero narrative isn't new to martial arts cinema (for proof, see the 'Once Upon a Time in China' movies, or any film series that features the popular Chinese figurehead/martial artist Sai-Yuk Fong). But the 'Ip Man' movies—especially the three titles that star Yen and are directed by Wilson Yip: 'Ip Man,' 'Ip Man 2,' and 'Ip Man 3'—are very sturdy because they are all formulaic: they don't deliver more or less than what you might expect from an action franchise about a humble local hero who only fights badmen whenever he has to.",
             "tgrel": "29/12/2018",
             "penulis": "Chi-Leung Kwong",
-            "genre":["Action", "Biography", "Crime"],
+            "genre":[{"key":"2021","name":"Action"}, {"key":"2022","name":"Biography"},{"key":"2023","name": "Crime"}],
             "img": "./imgmovie/masterz.jpg",
             "id": "01190842",
             "key": "0988"
@@ -95,7 +95,7 @@
             "sipno": "In the Coen Brothers' “True Grit,” Jeff Bridges is not playing the John Wayne role. He's playing the Jeff Bridges role — or, more properly, the role created in the enduring novel by Charles Portis, much of whose original dialogue can be heard in this film. Bridges doesn't have the archetypal stature of the Duke. Few ever have. But he has here, I believe, an equal screen presence. We always knew we were looking at John Wayne in the original “True Grit” (1969). When we see Rooster Cogburn in this version, we're not thinking about Jeff Bridges.",
             "tgrel": "22/12/2010",
             "penulis": "Ethan Coen Joel",
-            "genre":["Drama", "Wastern"],
+            "genre":[{"key":"1010","name":"Drama"},{"key":"1011","name": "Wastern"}],
             "img": "./imgmovie/truegrit.jpg",
             "id": "01921749812",
             "key": "0989"
@@ -105,7 +105,7 @@
             "sipno": " “His House” is a marriage haunted by shared trauma. Writer/director Remi Weekes makes this symbolic connection clear, albeit somewhat comically, in the first scene. Bol Majur (Sope Dirisu) awakens from a nightmare to find his wife Rial (Wunmi Mosaku) cradling his head. “What were you dreaming about?” she asks. Bol tells a little white lie, the harmless kind that couples often use to avoid a more potentially fraught truth-telling. He tells her his dream was about their wedding day. “That explains all the screaming,” she replies",
             "tgrel": "27/01/2021",
             "penulis": "Felicity Evans Toby Venables",
-            "genre":["Drama", "Horror", "Thriller"],
+            "genre":[{"key":"9090", "name":"Drama"}, {"key":"9091", "name":"Horror"},{"key":"9092", "name": "Thriller"}],
             "img": "./imgmovie/hishouse.jpg",
             "id": "012148129",
             "key": "0990"
@@ -115,7 +115,7 @@
             "sipno": "During this past month, the horror genre has taken it especially hard on the chin with the release of such instantly and intensely forgettable duds as “The Grudge,” “Underwater” and “The Turning,” a trio of films that collectively failed to inspire the same amount of raw terror found in the trailer for that “Peter Rabbit” sequel. Therefore, people might understandably look at “Gretel & Hansel,” a film being dropped into theaters with little advance word and on Super Bowl weekend to boot, and assume that it's just another movie destined to come and go from the multiplex in net-record time. In reality, this is the kind of low-key gem that horror fans are always looking for but so rarely find—one that is smartly conceived, visually stylish and genuinely creepy at times.",
             "tgrel": "30/01/2020",
             "penulis": "Rob Hayes",
-            "genre":["Fantasy", "Horror", "Mystery"],
+            "genre":[{"key":"0009", "name":"Fantasy"}, {"key":"0008", "name":"Horror"},{"key":"0007", "name": "Mystery"}],
             "img": "./imgmovie/gretel.jpg",
             "id": "01821379",
             "key": "0991"

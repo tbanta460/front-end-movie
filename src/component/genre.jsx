@@ -5,7 +5,7 @@ class Genre extends Component{
         this.state = {
             arrGenre: [
                 {
-                    name:"Horro",
+                    name:"Horror",
                     key: "100"
                 },
                 {
@@ -62,7 +62,7 @@ class Genre extends Component{
     }
     handleAktif = (e) => {
         const getSelection = this.state.arrGenre.map(data => {
-            return data
+            return data.name
         }).filter(data => {
             if(data === e.target.textContent){
                 return data
@@ -95,7 +95,7 @@ class Genre extends Component{
                         this.state.arrGenre.map((data,index) => {
                             return(
                                 
-                                    <div key={data.key}className={`lg:text-left text-center px-3 py-2 hover:bg-101 cursor-pointer text-white duration-500 rounded-lg mx-2 ${this.state.genre == data ? "bg-101" : ""}`} onClick={this.handleAktif}>
+                                    <div key={data.key}className={`lg:text-left text-center px-3 py-2 hover:bg-101 cursor-pointer text-white duration-500 rounded-lg mx-2 ${this.state.genre == data.name ? "bg-101" : ""}`} onClick={this.handleAktif}>
                                         {
                                             data.name
                                         }

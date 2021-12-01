@@ -7,7 +7,6 @@ class InfoMovie extends Component {
     render(){
         const lengthText = 100;
         const dataProps = this.props.data
-        console.log(dataProps)
         return (
             <>
                 <div className="bg-white w-64 absolute z-10 x15 hidden md:block rounded-md p-2 text-left">

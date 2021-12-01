@@ -58,17 +58,23 @@ class GetData extends Component{
         })
     }
     filterData = (e) => {
+        const genreObj = {}
+        genreObj["name"] = this.state.changeGenre
         let getGenre = Array.from(e).map(data => {
-            if(data.genre.includes(this.state.changeGenre)){
-                return data
-            } else {
-                return null
-            }
+            let emptyObj = {}
+            data.genre.some(dataGenre => {
+                if(dataGenre.name === genreObj.name){
+                    emptyObj = data
+                }else {
+                    return null
+                }
+            })
+            return emptyObj
         }).filter(data => {
-            if(data !== null){
+            if(Object.keys(data).length !== 0){
                 return data
             }
-        })
+        });
         return getGenre
     }
     genreList = (e) => {

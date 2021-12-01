@@ -2,10 +2,10 @@ import React, {useState, useEffect, useCallback} from 'react';
 import {useRouter} from 'next/router';
 
 // Component
-import Header from './component/header';
-import Footer from './component/footer'
-import CardRec from './component/card/cardrec';
-import BarRight from './component/sideBarRightForMobile/barRight'
+import Header from '../src/component/header';
+import Footer from '../src/component/footer'
+import CardRec from '../src/component/card/cardrec';
+import BarRight from '../src/component/sideBarRightForMobile/barRight'
 
 const Searching = () => {
     const rout = useRouter();

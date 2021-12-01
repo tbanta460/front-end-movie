@@ -4,12 +4,12 @@ import styles from '../styles/Home.module.css'
 import React, {Component} from 'react';
 
 // Compoent
-import Header from './component/header'
-import Recmovie from './component/recmovie'
-import GetData from './component/trends'
-import Trailer from './component/videoTrailer'
-import Footer from './component/footer'
-import BarRight from './component/sideBarRightForMobile/barRight';
+import Header from '../src/component/header'
+import Recmovie from '../src/component/recmovie'
+import GetData from '../src/component/trends'
+import Trailer from '../src/component/videoTrailer'
+import Footer from '../src/component/footer'
+import BarRight from '../src/component/sideBarRightForMobile/barRight';
 
 
 

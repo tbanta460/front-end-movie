@@ -58,7 +58,7 @@ const Searching = () => {
                 <h2 className="text-white font-bold p-14 text-3xl">Showing all results for <span className="italic">{rout.query.name}</span></h2>
                 <div className="grid grid-cols-2 lg:flex flex-wrap items-center justify-start">
                 {
-                    searchName.length ? searchName.map(data => <CardRec image={data.img} data={data}/>) : ""
+                    searchName.length ? searchName.map(data => <CardRec image={data.img} data={data} key={data.key}/>) : ""
                 }
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useCallback} from 'react';
 import {useRouter} from 'next/router';
 
 // Component
@@ -11,22 +11,23 @@ const Searching = () => {
     const rout = useRouter();
     const [searchName,setSearchName] = useState([]);
     const [update, setUpdate] = useState(false);
-    useEffect(() => {
+    const fetchMyData = useCallback(() => {
         if(!update){
-            fetchData();
-        };
-    },[]);
-    const fetchData = () => {
-        fetch('http://localhost:3010/movie')
-        .then(res => res.json())
-        .then(respone => {
-            const getName = Array.from(respone).map(data => {
-                return data
+             fetch('http://localhost:3010/movie')
+            .then(res => res.json())
+            .then(respone => {
+                const getName = Array.from(respone).map(data => {
+                    return data
+                })
+                setUpdate(true)
+                filterMovie(getName)
             })
-            setUpdate(true)
-            filterMovie(getName)
-        })
-    }
+        }
+    },[update])
+    useEffect(() => {
+        fetchMyData();
+    },[fetchMyData]);
+   
     const filterMovie = (nameMovie) => {
         let arrMovie = []
         const valueSearch = rout.query.name

@@ -4,7 +4,7 @@ const router = jsonServer.router('./dataJSON/movie.json');
 const middlewares = jsonServer.defaults({
   static: './build'
 });
-const PORT = 3010;
+const PORT = process.env.PORT || 3010;
 server.use(middlewares);
 server.use(jsonServer.rewriter({
   '/api/*': '/$1',

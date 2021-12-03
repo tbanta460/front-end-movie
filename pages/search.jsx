@@ -13,7 +13,7 @@ const Searching = () => {
     const [update, setUpdate] = useState(false);
     const fetchMyData = useCallback(() => {
         if(!update){
-             fetch('http://localhost:3010/movie')
+             fetch('https://mylistmovie.herokuapp.com/movie')
             .then(res => res.json())
             .then(respone => {
                 const getName = Array.from(respone).map(data => {

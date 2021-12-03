@@ -32,7 +32,7 @@ class GetData extends Component{
     }
 
     fetchData = () => {
-        fetch('http://localhost:3010/movie')
+        fetch('https://mylistmovie.herokuapp.com/movie')
         .then(data => data.json())
         .then(async data => {
             let forTrends

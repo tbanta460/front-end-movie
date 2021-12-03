@@ -6,7 +6,7 @@ const FetchData = () => {
     const [load, setLoad] = useState();
     const [items, setItems] = useState();
     const fetchData = useCallback(() => {
-        fecth('http://localhost:3010/movie')
+        fecth('https://mylistmovie.herokuapp.com/movie')
         .then(res => res.json())
         .then(respone => {
             setLoad(true);
